@@ -1,0 +1,79 @@
+/* Req #8: Apply background color and style at least 6 elements */
+
+/* 1. Body: Sand palette [cite: 52] */
+body {
+    background-color: #f5f5dc; 
+    color: #4a5d4a; /* Sage dark text */
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+/* 2. Header: Sage green palette [cite: 52] */
+header {
+    background-color: #a3b18a;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+/* 3. Main: Req #10 Box Model (Border, Margin, Padding) */
+main {
+    background-color: rgba(255, 255, 255, 0.7); /* Glassmorphism [cite: 54] */
+    max-width: 850px;
+    margin: 25px auto;      /* Margin */
+    padding: 35px;          /* Padding */
+    border: 3px solid #a3b18a; /* Border */
+    border-radius: 30px;
+}
+
+/* 4. Req #9: CSS Class for custom formatting (Terracotta alert) [cite: 52] */
+.custom-highlight {
+    background-color: #f2e9e4;
+    padding: 15px;
+    border-left: 6px solid #cc7e61; 
+    font-weight: bold;
+}
+
+/* 5. Req #7: Table Formatting */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+}
+
+th {
+    background-color: #a3b18a;
+    color: white;
+}
+
+/* 6. Pill Styling: Fully rounded corners [cite: 55] */
+.pill-input, .pill-button {
+    border-radius: 50px;
+    border: 1px solid #a3b18a;
+    padding: 12px;
+    margin: 8px 0;
+    width: 100%;
+    display: block;
+}
+
+/* Photo Sizing: Req #4 */
+.profile-img { 
+    width: 320px; 
+    height: auto; 
+    border-radius: 20px; 
+    margin: 15px 0;
+}
+
+.dashboard-img { 
+    width: 450px; 
+    height: auto; 
+    border-radius: 15px; 
+    margin: 15px 0;
+}
