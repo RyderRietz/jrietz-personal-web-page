@@ -41,7 +41,7 @@ jobs:
           ###### Repository/Build Configurations ######
           app_location: "/" 
           api_location: "" 
-          output_location: "" # FIXED: Removed the "." to skip the build step
+          output_location: "" 
           github_id_token: ${{ steps.idtoken.outputs.result }}
           ###### End of Repository/Build Configurations ######
 
