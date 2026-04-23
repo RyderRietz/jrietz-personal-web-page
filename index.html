@@ -4,8 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To-Do Tracker | Home</title>
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ELRSNBGPCZ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-ELRSNBGPCZ');
+    </script>
+
     <link rel="stylesheet" href="style/stylesheet.css">
 </head>
+
 <body>
     <header>
         <h1>To-Do Tracker</h1>
@@ -17,19 +28,29 @@
 
     <main class="glass-card">
         <section id="about">
-            <h2>About Our Product</h2> <p>Our mission is to reduce stress for students like <strong>Ryder</strong> by providing clarity on academic deadlines.</p>
+            <h2>About Our Product</h2>
+            <p>Our mission is to reduce stress for students like <strong>Ryder</strong> by providing clarity on academic deadlines.</p>
             
             <img src="images/60964c0a-0742-4f8c-8e61-8b0d91ea2087.jpg" alt="Ryder's Birthday" class="profile-img">
             
-            <p class="custom-highlight">Goal: 80% task completion rate to boost student confidence.</p> </section>
+            <p class="custom-highlight">Goal: 80% task completion rate to boost student confidence.</p>
+        </section>
 
         <section id="login">
-            <h3>User Login</h3> <form>
-                <input type="text" placeholder="Username" class="pill-input">
-                <input type="password" placeholder="Password" class="pill-input">
+            <h3>User Login</h3>
+            <form>
+                <label for="username">Username</label>
+                <input id="username" type="text" placeholder="Username" class="pill-input">
+
+                <label for="password">Password</label>
+                <input id="password" type="password" placeholder="Password" class="pill-input">
+
                 <button type="button" class="pill-button">Enter Dashboard</button>
             </form>
-            <p>Need study tips? Visit the <a href="https://tippie.uiowa.edu" target="_blank">Tippie College of Business</a>.</p>
+
+            <p>Need study tips? Visit the 
+                <a href="https://tippie.uiowa.edu" target="_blank">Tippie College of Business</a>.
+            </p>
         </section>
     </main>
 
